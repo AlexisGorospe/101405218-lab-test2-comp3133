@@ -1,4 +1,27 @@
-<p>missionlist works!</p>
 <div>
-    <h4>{{post|json}}</h4>
+    @for(mission of post; track $index){
+        <div>
+            <h3>Flight Number: {{mission.flight_number}}</h3>
+            <p>Mission Name: {{mission.mission_name}}</p>
+            <p>Launch Year: {{mission.launch_year}}</p>
+            <p>Details: {{mission.Details}}</p>
+
+            <p>Flight Number: {{mission.flight_number}}</p>
+            <h4>rocket</h4>
+            <ul>
+                <li>type: {{mission.rocket.rocket_type}}</li>
+                <li>name: {{mission.rocket.rocket_name}}</li>
+            </ul>
+            <h4>links</h4>
+            <ul>
+                <li><a href="{{mission.links.mission_patch_small}}">mission patch</a></li>
+                <li><a href="{{mission.links.article_link}}">article</a></li>
+                <li><a href="{{mission.links.wikipedia}}">wikipedia</a></li>
+                <li><a href="{{mission.links.video_link}}">video</a></li>
+            </ul>
+
+        </div>
+        
+        
+    }
 </div>
