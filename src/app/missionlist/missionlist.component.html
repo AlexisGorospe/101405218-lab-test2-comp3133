@@ -2,6 +2,7 @@
     @for(mission of post; track $index){
         <div>
             <h3>Flight Number: {{mission.flight_number}}</h3>
+            <img src="{{mission.links.mission_patch_small}}">
             <p>Mission Name: {{mission.mission_name}}</p>
             <p>Launch Year: {{mission.launch_year}}</p>
             <p>Details: {{mission.Details}}</p>
