@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { MissionlistComponent } from "./missionlist/missionlist.component";
 
+
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, MissionlistComponent],
